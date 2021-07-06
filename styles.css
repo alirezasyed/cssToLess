@@ -57,3 +57,59 @@ body {
     color: #111;
     background-color: #CCC;
 }
+
+#content {
+	margin: 0;
+	padding: 0;
+	min-height: 350px;
+}
+
+#content h1 {
+    background-color: #143352;
+    color: #FFF;
+}
+
+#content h1, #content h2, #content p {
+    padding-left: 1rem;
+}
+
+#content ul {
+    margin-left: 3rem;
+}
+
+#content h2 {
+    border-bottom: 3px #143352 solid;
+    color: #143352;
+}
+
+.know {
+    width: 35%;
+    float: right;
+    border: 1px solid #143352;
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.know h1 {
+    background-color: #143352;
+    color: #FFF;
+    margin-top: 0;
+    font-size: 1.6rem;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+.pre {
+    padding: 2rem;
+    background-color: #ddd;
+    font-family:"Lucida Console", Monaco, monospace;
+    border-radius: 10px;
+}
+
+#footer {
+	border-top: 1px solid #143352;
+}
+
+#footer p {
+    font-size: .8rem;
+}
