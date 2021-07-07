@@ -1,3 +1,7 @@
+.topBorderRadius {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
 body {
   font-family: Tahoma, Arial, sans-serif;
   font-size: 16px;
@@ -9,9 +13,9 @@ body {
   min-width: 350px;
 }
 #header {
-  background-color: #3586d8;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  background-color: #3586d8;
   margin: 0;
 }
 .title {
@@ -79,12 +83,12 @@ body {
   margin: 0 10px 10px 10px;
 }
 .know h1 {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   background-color: #143352;
   color: #FFF;
   margin-top: 0;
   font-size: 1.6rem;
-  border-top-right-radius: 9px;
-  border-top-left-radius: 9px;
 }
 .pre {
   padding: 2rem;

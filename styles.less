@@ -1,9 +1,11 @@
-@fontSize: 16px;
-@baseColor: #3586d8;
-@lighterColor: #409fff;
-@darkerColor: #163859;
-@borderRadius: 10px;
+@import url('variables');
 
+
+
+.topBorderRadius {
+	border-top-right-radius: @borderRadius;
+	border-top-left-radius: @borderRadius;
+}
 
 
 body {
@@ -19,9 +21,8 @@ body {
 }
 
 #header {
+    .topBorderRadius;
 	background-color: @baseColor;
-	border-top-right-radius: @borderRadius;
-	border-top-left-radius: @borderRadius;
 	margin: 0;
 }
 
@@ -100,12 +101,11 @@ body {
 
 .know h1 {
     @borderRadius: 9px;
+    .topBorderRadius;
     background-color: #143352;
     color: #FFF;
     margin-top: 0;
     font-size: 1.6rem;
-    border-top-right-radius: @borderRadius;
-    border-top-left-radius: @borderRadius;
 }
 
 .pre {
