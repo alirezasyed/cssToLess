@@ -1,6 +1,5 @@
-.topBorderRadius {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+.borderRadius {
+  border-radius: 10px;
 }
 body {
   font-family: Tahoma, Arial, sans-serif;
@@ -79,12 +78,12 @@ body {
   width: 35%;
   float: right;
   border: 1px solid #143352;
-  border-radius: 10px;
   margin: 0 10px 10px 10px;
+  border-radius: 10px;
 }
 .know h1 {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
   background-color: #143352;
   color: #FFF;
   margin-top: 0;

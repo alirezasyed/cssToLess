@@ -2,9 +2,13 @@
 
 
 
-.topBorderRadius {
-	border-top-right-radius: @borderRadius;
-	border-top-left-radius: @borderRadius;
+.topBorderRadius (@radius: @borderRadius) {
+	border-top-right-radius: @radius;
+	border-top-left-radius: @radius;
+}
+
+.borderRadius {
+    border-radius: @borderRadius;
 }
 
 
@@ -59,7 +63,7 @@ body {
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
-    border-radius: @borderRadius;
+    .borderRadius
 }
 
 .navigation li a:hover {
@@ -95,13 +99,12 @@ body {
     width: 35%;
     float: right;
     border: 1px solid #143352;
-    border-radius: @borderRadius;
     margin: 0 10px 10px 10px;
+    .borderRadius
 }
 
 .know h1 {
-    @borderRadius: 9px;
-    .topBorderRadius;
+    .topBorderRadius(9px);
     background-color: #143352;
     color: #FFF;
     margin-top: 0;
@@ -112,7 +115,7 @@ body {
     padding: 2rem;
     background-color: #ddd;
     font-family:"Lucida Console", Monaco, monospace;
-    border-radius: @borderRadius;
+    .borderRadius;
 }
 
 #footer {
