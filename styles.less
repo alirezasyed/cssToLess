@@ -11,6 +11,10 @@
     border-radius: @borderRadius;
 }
 
+.width (@min; @max: 100%) {
+	min-width: @min;  // minimum width pour notre container
+	max-width: @max;  // width ne doit pas être supérieur à cette valeur 
+}
 
 body {
 	font-family: Tahoma, Arial, sans-serif;
@@ -20,8 +24,9 @@ body {
 #container {
 	margin: auto;
 	width: 80%;
-	max-width: 1050px;
-	min-width: 350px;
+    .width( 350px, 1050px);
+	// max-width: 1050px;
+	// min-width: 350px;
 }
 
 #header {

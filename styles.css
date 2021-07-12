@@ -8,8 +8,8 @@ body {
 #container {
   margin: auto;
   width: 80%;
-  max-width: 1050px;
   min-width: 350px;
+  max-width: 1050px;
 }
 #header {
   border-top-right-radius: 10px;
