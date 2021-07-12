@@ -63,6 +63,44 @@
                 border: 1px solid @color-base;
             } </pre>
 
+            <p>Il ne nous reste plus qu'à modifier une valeur à un seul endroit et toutes les valeurs sont mises à jour.</p>
+            <h2>Mixins</h2>
+
+            <div class="know">
+                <h1>Pourquoi utiliser un Mixin?</h1>
+                <p>Un mixin est bon lorsque plusieurs éléments répéteront un élément de design. Comme un style de bordure, un rayon, etc.
+                </p>
+            </div>
+
+            <p>Les mixins sont un peu comme des variables, attendez-vous à ce qu'au lieu de stocker une valeur, il stocke une ou plusieurs propriétés
+                et leurs valeurs.</p>
+
+            <p>Les mixins sont à certains égards plus puissants, mais aussi un peu moins flexibles, car ils combinent à la fois les
+                propriété et la valeur. C'est parce qu'il vous permet d'intégrer une règle CSS dans une autre règle.</p>
+
+            <p>C'est génial si vous avez un élément de conception qui se répète. Cependant, cela demande un peu plus
+                réfléchi pour s'assurer que cela fonctionnera pour vous.</p>
+
+            <p>Considérons l'exemple suivant avec un rayon de bordure.</p>
+
+            <pre>.roundedborder {
+                    border-radius: 10px;
+                }
+
+                .nav a {
+                    .roundedborder;
+                    color: #FFF;
+                    background-color: #000;
+                }</pre>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+        </div>
+
+        <div id="footer">
+            <p>Demo site</p>
+        </div>
+
     </div>
 </body>
 
