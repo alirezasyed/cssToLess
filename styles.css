@@ -17,7 +17,7 @@ body {
   background-color: #3586d8;
   margin: 0;
 }
-.title {
+#header .title {
   font-size: 2rem;
   font-weight: bold;
   color: #FFF;
@@ -38,9 +38,6 @@ body {
   list-style: none;
   font-size: 1.1rem;
 }
-.navigation li .first {
-  margin-left: 1rem;
-}
 .navigation li a,
 .navigation li a:visited {
   padding: 5px;
@@ -49,9 +46,13 @@ body {
   font-weight: bold;
   border-radius: 10px;
 }
-.navigation li a:hover {
+.navigation li a:hover,
+.navigation li a:visited:hover {
   color: #111;
   background-color: #CCC;
+}
+.navigation li.first {
+  margin-left: 1rem;
 }
 #content {
   margin: 0;
