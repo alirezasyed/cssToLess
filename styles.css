@@ -60,7 +60,7 @@ body {
 }
 #content h1 {
   background-color: #143352;
-  color: #FFF;
+  color: #fff;
 }
 #content h1,
 #content h2,
@@ -75,15 +75,19 @@ body {
   color: #143352;
 }
 .know {
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
   width: 35%;
   float: right;
   border: 1px solid #143352;
   margin: 0 10px 10px 10px;
-  border-radius: 10px;
 }
 .know h1 {
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
+  background-color: #163859;
+  color: #fff;
   background-color: #143352;
   color: #FFF;
   margin-top: 0;

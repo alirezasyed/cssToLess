@@ -71,6 +71,18 @@ body {
     background-color: #CCC;
 }
 
+
+
+.knowColor (@a) when (lightness(@a) >= 50%) {
+	background-color: @darkerColor;
+}
+.knowColor (@a) when (lightness(@a) < 50%) {
+	background-color: @white;
+}
+.knowColor (@a) {
+	color: @a;
+}
+
 #content {
 	margin: 0;
 	padding: 0;
@@ -79,7 +91,7 @@ body {
 
 #content h1 {
     background-color: #143352;
-    color: #FFF;
+    color: @white;
 }
 
 #content h1, #content h2, #content p {
@@ -96,15 +108,17 @@ body {
 }
 
 .know {
+    .borderRadius;
+    .knowColor(#000);
     width: 35%;
     float: right;
     border: 1px solid #143352;
     margin: 0 10px 10px 10px;
-    .borderRadius
 }
 
 .know h1 {
     .topBorderRadius(9px);
+    .knowColor(@white);
     background-color: #143352;
     color: #FFF;
     margin-top: 0;
