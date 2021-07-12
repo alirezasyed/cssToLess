@@ -56,7 +56,8 @@ body {
         display: inline-block;
         margin: 5px;
         list-style: none;
-        font-size: 1.1rem;
+        font-size: (1.1 * @fontSize);
+        // font-size: 1.1rem;
 
         a, a:visited {
             padding: 5px;
@@ -105,7 +106,8 @@ body {
     }
 
     ul {
-        margin-left: 3rem;
+        margin-left: (3 * @fontSize);
+        // margin-left: 3rem;
     }
 
     h2 {
