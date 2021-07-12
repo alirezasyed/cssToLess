@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Introduction aux variables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <p class="title">Introduction à {LESS}</p>
+            <ul class="navigation">
+                <li class="first"><a href="index.html">Aperçu</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="nesting.html">Nesting</a></li>
+                <li class="last"><a href="functions.html">Functions</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <h1>Variables et Mixins</h1>
+            <p><strong>Variables</strong> &amp; <strong>Mixins</strong> sont deux des moyens par lesquels {LESS} le rend plus rapide et
+                plus facile à développer et à maintenir vos styles CSS.</p>
+
+            <div class="know">
+                <h1>Qu'est-ce qu'une variable ?</h1>
+                <p>Les variables stockent une valeur CSS. Cette valeur peut ensuite être utilisée dans de nombreuses règles, et pour différentes
+                    Propriétés.</p>
+            </div>
+
+            <p>Les variables sont probablement l'un des éléments les plus demandés en CSS, en particulier par les concepteurs front-end qui ont
+                un peu d'expérience en programmation.</p>
+            <p>Si vous avez déjà écrit du CSS, vous avez probablement eu de nombreux sélecteurs qui utilisaient la même couleur, la même épaisseur,
+                etc. Et vous connaissez probablement la douleur de se retrouver dans une situation où vous deviez trouver et modifier chacune de ces valeurs lorsqu'un aspect de la conception était modifié. Avec {LESS} de variables, cela devient beaucoup plus facile.</p>
+            <p>Considérez le code CSS (attendez-vous à des milliers de lignes de code comme celle-ci):</p>
+
+            <pre>.class1 { 	
+                background-color: #143352;
+            }
+            .class2 { 	
+                background-color: #fff;
+                color: #143352;
+            } 
+            .class3 { 	
+                border: 1px solid #143352;
+            }</pre>
+
+            <p>En {less} nous définissons une valeur qui est utilisée encore et encore. Tel que:</p>
+
+            <pre>@color-base: #143352;
+            .class1 { 	
+                background-color: @color-base;
+            } 
+            .class2 { 	
+                background-color: #fff;
+                color: @color-base;
+            }
+            .class3 {
+                border: 1px solid @color-base;
+            } </pre>
+
+    </div>
+</body>
+
+</html>

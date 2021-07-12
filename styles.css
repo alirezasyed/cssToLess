@@ -20,7 +20,7 @@ body {
 #header .title {
   font-size: 2rem;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   margin: 10px 1rem;
   padding-top: 1rem;
   text-shadow: #000 1px 2px;
@@ -42,14 +42,14 @@ body {
 .navigation li a:visited {
   padding: 5px;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   border-radius: 10px;
 }
 .navigation li a:hover,
 .navigation li a:visited:hover {
-  color: #111;
-  background-color: #CCC;
+  color: #000;
+  background-color: #3586d8;
 }
 .navigation li.first {
   margin-left: 1rem;
@@ -87,12 +87,11 @@ body {
 .know h1 {
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
-  background-color: #163859;
-  color: #fff;
+  background-color: #0f2d4c;
   background-color: #143352;
-  color: #FFF;
+  color: #fff;
   margin-top: 0;
-  font-size: 1.6rem;
+  font-size: 26px;
 }
 .pre {
   padding: 2rem;

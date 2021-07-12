@@ -1,5 +1,5 @@
 @import url('variables.less');
-// @import 'variables.less';
+// @import "variables.less";
 
 
 
@@ -31,17 +31,17 @@ body {
 }
 
 #header {
-    .topBorderRadius;
+    .topBorderRadius();
 	background-color: @baseColor;
 	margin: 0;
     
     .title {
         font-size: 2rem;
         font-weight: bold;
-        color: #FFF;
+        color: @white;
         margin: 10px 1rem;
         padding-top: 1rem;
-        text-shadow: #000 1px 2px;
+        text-shadow: @black 1px 2px;
     }
 }
     
@@ -50,7 +50,7 @@ body {
 	height: 32px;
 	padding: 5px 0;
 	margin: 0;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid @black;
 
      li {
         display: inline-block;
@@ -62,14 +62,14 @@ body {
         a, a:visited {
             padding: 5px;
             text-decoration: none;
-            color: #FFF;
+            color: @white;
             font-weight: bold;
 
-            .borderRadius;
+            .borderRadius();
 
             &:hover {
-                color: #111;
-                background-color: #CCC;
+                color: @black;
+                background-color: @baseColor;
             }
         }
 
@@ -118,12 +118,9 @@ body {
 }
 
 
-
-
-
 .know {
-    .borderRadius;
-    .knowColor(#000);
+    .borderRadius();
+    .knowColor(@black);
     width: 35%;
     float: right;
     border: 1px solid #143352;
@@ -133,9 +130,10 @@ body {
         .topBorderRadius(9px);
         .knowColor(@white);
         background-color: #143352;
-        color: #FFF;
+        color: @white;
         margin-top: 0;
-        font-size: 1.6rem;
+        font-size: round(1.6 * @fontSize);
+        // font-size: 1.6rem;
     }
 }
 
@@ -144,7 +142,7 @@ body {
     padding: 2rem;
     background-color: #ddd;
     font-family:"Lucida Console", Monaco, monospace;
-    .borderRadius;
+    .borderRadius();
 }
 
 #footer {
