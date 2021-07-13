@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction aux nestings</title>
+    <link rel="stylesheet/less" href="styles.less" />
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <p class="title">Introduction au {LESS}</p>
+            <ul class="navigation">
+                <li class="first"><a href="index.html">Aperçu</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="nesting.html">Nesting</a></li>
+                <li class="last"><a href="functions.html">Functions</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <h1>Nesting</h1>
+            <p>Si vous avez déjà travaillé avec CSS, vous avez probablement mis au point des sélecteurs en cascade. C'est à ce moment que le
+                règles où vous vérifiez si ce sélecteur est un enfant sous un autre sélecteur, alors il s'applique, tel
+                comme ci-dessous:</p>
+
+            <pre>
+                .header {
+                    margin-top: 10px;
+                }
+                .header .title {
+                    font-size: 2em;
+                }
+                .header .title:hover {
+                    text-decoration: none;
+                }
+			</pre>
+
+            <div class="know">
+
+                <h1>Qu'en est-il de &amp;</h1>
+                <p>Le &amp; est un moyen de faire en sorte que l'élément suivant soit concaténé (c'est-à-dire attaché) à son parent
+                    sélecteur. Il est plus courant avec les pseudo sélecteurs, comme :hover, :focus, etc., mais peut être utilisé avec
+                    d'autres sélecteurs aussi.</p>
+            </div>
+
+            <p>{less} vous permet d'optimiser/simplifier vos règles en imbriquant des enfants dans leur sélecteur parent. Dans ce
+                manière, cela ressemble plus à la hiérarchie DOM.</p>
+
+            <p>Une chose à laquelle faire attention, c'est que si vous utilisez l'imbrication, vous devrez vous assurer que vous ouvrez et fermez correctement
+                vos accolades. Si vous ne le faites pas, certains sélecteurs pourraient ne pas fonctionner correctement.</p>
+
+            <p>Regardons l'exemple ci-dessus, mais avec l'imbrication {less} : (l'espacement n'est pas nécessaire, mais j'aime bien
+                pour la lisibilité)</p>
+
+            <pre>
+                .header {
+                    margin-top: 10px;
+
+                    .header .title {
+                        font-size: 2em;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+			</pre>
+        </div>
+        <div id="footer">
+            <p>Demo site</p>
+        </div>
+    </div>
+</body>
+
+</html>
