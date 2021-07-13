@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction aux fonctions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <p class="title">Introduction to {LESS}</p>
+            <ul class="navigation">
+                <li class="first"><a href="index.html">Overview</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="nesting.html">Nesting</a></li>
+                <li class="last"><a href="functions.html">Functions</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <h1>Fonctions &amp; Opérations en {less}</h1>
+            <h2>Opérations</h2>
+
+            <p>Les opérations permettent de modifier des valeurs proportionnelles à une autre valeur. Cela rend plus
+                facile
+                pour travailler avec un schéma de couleurs. Vous pouvez opérer sur n'importe quel nombre, couleur ou
+                variable.</p>
+
+            <div class="know">
+                <h1>Valeurs proportionnelles</h1>
+                <p>Ce sont des valeurs qui sont liées à une autre valeur. Par exemple, une version plus sombre de la
+                    couleur.</p>
+            </div>
+
+            <p>Pour utiliser une opération, vous devrez mettre l'opération entre parenthèses. Cela permet {less} de
+                savoir quoi en faire,
+                et le maintient compatible avec CSS.</p>
+
+            <p>Dans l'exemple suivant, vous pouvez voir comment la couleur rouge est définie. En tant que variable, il
+                peut être utilisé, mais alors
+                il peut également être ajusté en fonction d'une opération, dans ce cas pour désaturer la couleur.</p>
+
+            <p>En plus de la fonction de désaturation, vous pouvez également ajouter (+), soustraire (-), multiplier (*)
+                et diviser (/).
+                Cela signifie que vous pouvez ajouter de la valeur à l'épaisseur d'une ligne ou à la taille d'une
+                police.</p>
+
+            <pre>
+                @red:	#842210;
+                .class1 {
+                    color: @red;
+                    border-color: desaturate(@red, 30%);
+                }
+			</pre>
+
+            <h2>Fonctions</h2>
+            <p>{less} fournit une variété de fonctions qui transforment les couleurs, manipulent des chaînes et font des
+                calculs. Elles sont
+                documenté entièrement dans la référence de la fonction.</p>
+
+            <p>Vous pouvez utiliser des fonctions pour déterminer de nouvelles valeurs en fonction d'autres valeurs. Le
+                processus peut être aussi simple ou
+                compliqué que vous le souhaitez.</p>
+        </div>
+
+        <div id="footer">
+            <p>Demo site</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
